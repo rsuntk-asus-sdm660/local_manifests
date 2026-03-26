@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+	<remote name="rsuntk-asus-sdm660" fetch="https://github.com/rsuntk-asus-sdm660" />
+	<remote name="rsuntk" fetch="https://github.com/rsuntk" />
+
+	<!-- Remove Unnecessary QCOM CAF Projects -->
+	<remove-project path="hardware/qcom-caf/sdm660/audio" />
+	<remove-project path="hardware/qcom-caf/sdm845/audio" />
+	<remove-project path="hardware/qcom-caf/sdm845/display" />
+	<remove-project path="hardware/qcom-caf/sdm845/media" />
+	<remove-project path="hardware/qcom-caf/sm8150/audio" />
+	<remove-project path="hardware/qcom-caf/sm8150/display" />
+	<remove-project path="hardware/qcom-caf/sm8150/media" />
+	<remove-project path="hardware/qcom-caf/sm8250/audio" />
+	<remove-project path="hardware/qcom-caf/sm8250/display" />
+	<remove-project path="hardware/qcom-caf/sm8250/media" />
+	<remove-project path="hardware/qcom-caf/sm8350/audio" />
+	<remove-project path="hardware/qcom-caf/sm8350/display" />
+	<remove-project path="hardware/qcom-caf/sm8450/audio/agm" />
+	<remove-project path="hardware/qcom-caf/sm8450/audio/graphservices" />
+	<remove-project path="hardware/qcom-caf/sm8450/audio/pal" />
+	<remove-project path="hardware/qcom-caf/sm8450/audio/primary-hal" />
+	<remove-project path="hardware/qcom-caf/sm8450/data-ipa-cfg-mgr" />
+	<remove-project path="hardware/qcom-caf/sm8450/display" />
+	<remove-project path="hardware/qcom-caf/sm8550/audio/agm" />
+	<remove-project path="hardware/qcom-caf/sm8550/audio/pal" />
+	<remove-project path="hardware/qcom-caf/sm8550/audio/primary-hal" />
+	<remove-project path="hardware/qcom-caf/sm8550/data-ipa-cfg-mgr" />
+	<remove-project path="hardware/qcom-caf/sm8550/dataipa" />
+	<remove-project path="hardware/qcom-caf/sm8550/display" />
+	<remove-project path="hardware/qcom-caf/sm8650/audio/agm" />
+	<remove-project path="hardware/qcom-caf/sm8650/audio/pal" />
+	<remove-project path="hardware/qcom-caf/sm8650/audio/primary-hal" />
+	<remove-project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" />
+	<remove-project path="hardware/qcom-caf/sm8650/dataipa" />
+	<remove-project path="hardware/qcom-caf/sm8650/display" />
+	<remote-project name="LineageOS/android_hardware_lineage_interfaces" />
+
+	<!-- QCOM CAF Projects -->
+	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom-caf_audio" groups="qcom,sdm660" revision="lineage-23.2-caf-sdm660" clone-depth="1" />
+	<project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
+
+	<!-- Kernel and Device Projects -->
+	<project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660-4.19" revision="lineage-23.2" remote="rsuntk" clone-depth="1" />
+	<project path="device/asus/X01BD" name="android_device_asus_X01BD" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
+	<project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
+	<project path="vendor/asus" name="android_vendor_asus_sdm660" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
+
+	<!-- Signing Key -->
+	<project path="vendor/rsuntk-priv/keys" name="vendor_lineage-priv" revision="master" remote="rsuntk-asus-sdm660" clone-depth="1" />
+</manifest>
