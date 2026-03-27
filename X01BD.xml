@@ -38,7 +38,7 @@
 	<remote-project name="LineageOS/android_hardware_lineage_interfaces" />
 
 	<!-- QCOM CAF Projects -->
-	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom-caf_audio" groups="qcom,sdm660" revision="lineage-23.2-caf-sdm660" clone-depth="1" />
+	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom-caf_audio" groups="qcom,sdm660" revision="lineage-23.2-caf-sdm660" remote="rsuntk-asus-sdm660" clone-depth="1" />
 	<project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
 
 	<!-- Kernel and Device Projects -->
