@@ -4,11 +4,11 @@
 	<remote name="rsuntk-asus-sdm660" fetch="https://github.com/rsuntk-asus-sdm660" />
 	<remote name="rsuntk" fetch="https://github.com/rsuntk" />
 
-	<!-- Remove Unnecessary QCOM CAF Projects -->
+	<!-- Removal -->
 	<remove-project path="hardware/qcom-caf/sdm660/audio" />
-	<remote-project name="LineageOS/android_hardware_lineage_interfaces" />
+	<remove-project name="LineageOS/android_hardware_lineage_interfaces" />
 
-	<!-- QCOM CAF Projects -->
+	<!-- Track our fork -->
 	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom-caf_audio" groups="qcom,sdm660" revision="lineage-23.2-caf-sdm660" remote="rsuntk-asus-sdm660" clone-depth="1" />
 	<project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
 
