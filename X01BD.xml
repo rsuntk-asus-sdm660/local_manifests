@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
 	<remote name="rsuntk-asus-sdm660" fetch="https://github.com/rsuntk-asus-sdm660" />
+	<remote name="rsuntk" fetch="https://github.com/rsuntk" />
+
+	<!-- Removal -->
+	<remove-project name="LineageOS/android_hardware_qcom_audio" />
+	<remove-project name="LineageOS/android_hardware_qcom_display" />
+	<remove-project name="LineageOS/android_hardware_lineage_interfaces" />
+
+	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom-caf_audio" remote="rsuntk-asus-sdm660" clone-depth="1" />
+	<project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" remote="rsuntk-asus-sdm660" clone-depth="1" />
+	<project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="rsuntk-asus-sdm660" clone-depth="1" />
 
 	<project path="device/asus/X01BD" name="android_device_asus_X01BD" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
+	<project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
+	<project path="vendor/asus" name="android_vendor_asus_sdm660" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
+	<project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660-4.19" revision="lineage-20" remote="rsuntk" clone-depth="1" />
 	<project path="vendor/rsuntk-priv/keys" name="vendor_lineage-priv" revision="master" remote="rsuntk-asus-sdm660" clone-depth="1" />
+
+	<project path="hardware/dolby" name="hardware_dolby" revision="16" remote="rsuntk-asus-sdm660" clone-depth="1" />
+
 </manifest>
