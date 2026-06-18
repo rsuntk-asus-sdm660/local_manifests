@@ -5,9 +5,9 @@
 	<remote name="rsuntk" fetch="https://github.com/rsuntk" />
 
 	<!-- Removal -->
-	<remove-project name="LineageOS/android_hardware_qcom_audio" />
-	<remove-project name="LineageOS/android_hardware_qcom_display" />
-	<remove-project name="LineageOS/android_hardware_lineage_interfaces" />
+	<remove-project path="hardware/qcom-caf/sdm660/audio" />
+	<remove-project path="hardware/qcom-caf/sdm660/display" />
+	<remove-project path="hardware/lineage/interfaces" />
 
 	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom-caf_audio" remote="rsuntk-asus-sdm660" clone-depth="1" />
 	<project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" remote="rsuntk-asus-sdm660" clone-depth="1" />
