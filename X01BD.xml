@@ -9,9 +9,9 @@
 	<remove-project path="hardware/qcom-caf/sdm660/display" />
 	<remove-project path="hardware/lineage/interfaces" />
 
-	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom-caf_audio" remote="rsuntk-asus-sdm660" clone-depth="1" />
-	<project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" remote="rsuntk-asus-sdm660" clone-depth="1" />
-	<project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="rsuntk-asus-sdm660" clone-depth="1" />
+	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom-caf_audio" revision="lineage-23.2-caf-sdm660" remote="rsuntk-asus-sdm660" clone-depth="1" />
+	<project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" revision="lineage-23.2-caf-sdm660" remote="rsuntk-asus-sdm660" clone-depth="1" />
+	<project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
 
 	<project path="device/asus/X01BD" name="android_device_asus_X01BD" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
 	<project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" revision="lineage-23.2" remote="rsuntk-asus-sdm660" clone-depth="1" />
