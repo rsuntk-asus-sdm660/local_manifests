@@ -8,7 +8,7 @@
 	<remove-project path="hardware/qcom-caf/sdm660/audio" />
 	<remove-project path="hardware/qcom-caf/sdm660/display" />
 
-	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom-caf_audio" revision="lineage-23.2-caf-sdm660" remote="rsuntk-asus-sdm660" />
+	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom_audio" revision="lineage-23.2-caf-sdm660" remote="rsuntk-asus-sdm660" />
 	<project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" revision="lineage-23.2-caf-sdm660" remote="rsuntk-asus-sdm660" />
 
 	<project path="device/asus/X01BD" name="android_device_asus_X01BD" remote="rsuntk-asus-sdm660" />
