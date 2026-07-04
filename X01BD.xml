@@ -2,7 +2,7 @@
 <manifest>
 
 	<remote name="rsuntk-asus-sdm660" fetch="https://github.com/rsuntk-asus-sdm660" revision="lineage-24.0" clone-depth="1" />
-	<remote name="rsuntk-asus-priv" fetch="ssh://git@github.com:rsuntk-asus-sdm660" revision="lineage-24.0" clone-depth="1" />
+	<remote name="rsuntk-asus-priv" fetch="ssh://git@github.com/rsuntk-asus-sdm660" revision="lineage-24.0" clone-depth="1" />
 
 	<remote name="rsuntk" fetch="https://github.com/rsuntk" />
 
