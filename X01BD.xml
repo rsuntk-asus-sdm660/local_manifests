@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="rsuntk-asus-sdm660" fetch="https://github.com/rsuntk-asus-sdm660" revision="lineage-24.0" clone-depth="1" />
-	<remote name="rsuntk" fetch="https://github.com/rsuntk" />
+	<!-- Public Remote -->
+	<remote name="rsuntk-asus-sdm660" fetch="https://github.com/rsuntk-asus-sdm660" revision="master" clone-depth="1" />
+	<remote name="rsuntk" fetch="https://github.com/rsuntk" revision="master" clone-depth="1" />
 
-	<remote name="rsuntk-asus-priv" fetch="ssh://git@github.com/rsuntk-asus-sdm660" revision="lineage-24.0" clone-depth="1" />
+	<!-- Private Remote -->
+	<remote name="rsuntk-asus-priv" fetch="ssh://git@github.com/rsuntk-asus-sdm660" revision="master" clone-depth="1" />
 	<remote name="rsuntk-priv" fetch="ssh://git@github.com/rsuntk" revision="master" clone-depth="1" />
 
 	<!-- Removal -->
 	<remove-project path="hardware/qcom-caf/sdm660/audio" />
 	<remove-project path="hardware/qcom-caf/sdm660/display" />
 
-	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom_audio" revision="lineage-23.2-caf-sdm660" remote="rsuntk-asus-sdm660" />
-	<project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" revision="lineage-23.2-caf-sdm660" remote="rsuntk-asus-sdm660" />
+	<!-- Custom Audio and Display Hal -->
+	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom_audio" remote="rsuntk-asus-sdm660" />
+	<project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" remote="rsuntk-asus-sdm660" />
 
+	<!-- Device stuff -->
 	<project path="device/asus/X01BD" name="android_device_asus_X01BD" remote="rsuntk-asus-sdm660" />
-	<project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" remote="rsuntk-asus-priv" />
+	<project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" remote="rsuntk-asus-priv" revision="lineage-24.0" />
+	<project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660-4.19" remote="rsuntk" clone-depth="1" />
 	<project path="vendor/asus" name="android_vendor_asus_sdm660" remote="rsuntk-asus-sdm660" />
-	<project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660-4.19" revision="lineage-24.0" remote="rsuntk" clone-depth="1" />
 	<project path="vendor/rsuntk-priv/keys" name="signing_priv" remote="rsuntk-priv" />
 
 </manifest>
