@@ -1,0 +1,14 @@
+## How to use
+
+1. Clone local_manifests
+```sh
+git clone https://github.com/rsuntk-asus-sdm660/local_manifests.git -b lineage-24.0 .repo/local_manifests
+```
+
+2. Sync
+```sh
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync
+```
+
+## Credits
+- [@SonicBSV](https://github.com/SonicBSV) - Base tree
