@@ -17,6 +17,9 @@
 	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom_audio" remote="rsuntk-asus-sdm660" />
 	<project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" remote="rsuntk-asus-sdm660" />
 
+	<!-- Dolby -->
+	<project path="hardware/dolby" name="android_hardware_dolby" remote="rsuntk-asus-sdm660" />
+
 	<!-- Device stuff -->
 	<project path="device/asus/X01BD" name="android_device_asus_X01BD" remote="rsuntk-asus-sdm660" revision="lineage-24.0" />
 	<project path="device/asus/X01BD-common" name="android_device_asus_X01BD-common" remote="rsuntk-asus-priv" revision="lineage-24.0" />
