@@ -13,9 +13,13 @@
 	<remove-project path="hardware/qcom-caf/sdm660/audio" />
 	<remove-project path="hardware/qcom-caf/sdm660/display" />
 	<remove-project path="packages/modules/adb" />
+	<remove-project path="device/qcom/sepolicy-legacy-um" />
 
 	<!-- ADB -->
 	<project path="packages/modules/adb" name="adb" remote="rsuntk-asus-sdm660" revision="lineage-24.0" />
+
+	<!-- SEPolicy legacy-um -->
+	<project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="rsuntk-asus-sdm660" revision="lineage-24.0-legacy-um" />
 
 	<!-- QCOM Hal -->
 	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom_audio" remote="rsuntk-asus-sdm660" />
