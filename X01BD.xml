@@ -15,7 +15,7 @@
 	<remove-project path="packages/modules/adb" />
 
 	<!-- ADB -->
-	<project path="packages/modules/adb" name="adb" remote="rsuntk-asus-sdm660" />
+	<project path="packages/modules/adb" name="adb" remote="rsuntk-asus-sdm660" revision="cp2a" />
 
 	<!-- QCOM Hal -->
 	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom_audio" remote="rsuntk-asus-sdm660" />
