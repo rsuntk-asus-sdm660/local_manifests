@@ -33,7 +33,7 @@
 	<project path="device/asus/X01BD-common" name="android_device_asus_X01BD-common" remote="rsuntk-asus-priv" revision="lineage-24.0" />
 
 	<!-- Kernel Stuff -->
-	<project path="kernel/asus/sdm660" name="android_kernel_asus_X01BD-4.19" remote="rsuntk" clone-depth="1" />
+	<project path="kernel/asus/X01BD" name="android_kernel_asus_X01BD-4.19" remote="rsuntk" clone-depth="1" />
 
 	<!-- Vendor stuff -->
 	<project path="vendor/asus" name="proprietary_vendor_asus" remote="rsuntk-asus-sdm660" revision="lineage-24.0"/>
