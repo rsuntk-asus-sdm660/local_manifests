@@ -43,7 +43,7 @@
 	<project path="device/asus/X01BD" name="android_device_asus_X01BD" remote="rsuntk-asus-sdm660" revision="lineage-24.0" />
 	<project path="device/asus/X01BD-common" name="android_device_asus_X01BD-common" remote="rsuntk-asus-priv" revision="lineage-24.0" />
 	<project path="kernel/asus/X01BD" name="android_kernel_asus_X01BD-4.19" remote="rsuntk" clone-depth="1" />
-	<project path="vendor/asus" name="proprietary_vendor_asus" remote="rsuntk-asus-sdm660" revision="lineage-24.0"/>
+	<project path="vendor/asus" name="proprietary_vendor_asus" remote="rsuntk-asus-priv" revision="lineage-24.0"/>
 	
 	<!-- Signing -->
 	<project path="vendor/rsuntk-priv/keys" name="signing_priv" remote="rsuntk-priv" />
