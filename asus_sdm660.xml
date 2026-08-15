@@ -37,7 +37,7 @@
 	<project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" remote="rsuntk-asus-sdm660" />
 
 	<!-- Dolby Atmos -->
-	<project path="hardware/dolby" name="android_hardware_dolby" remote="rsuntk-asus-sdm660" />
+	<project path="hardware/asus/dolby" name="android_hardware_dolby" remote="rsuntk-asus-sdm660" />
 
 	<!-- Common stuff -->
 	<project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" remote="rsuntk-asus-priv" revision="lineage-24.0" />
