@@ -39,12 +39,19 @@
 	<!-- Dolby Atmos -->
 	<project path="hardware/dolby" name="android_hardware_dolby" remote="rsuntk-asus-sdm660" />
 
-	<!-- Device stuff -->
+	<!-- Common stuff -->
+	<project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" remote="rsuntk-asus-priv" revision="lineage-24.0" />
+	<project path="vendor/asus/sdm660-common" name="proprietary_vendor_asus_sdm660-common" remote="rsuntk-asus-sdm660" revision="lineage-24.0" />
+	<project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660-4.19" remote="rsuntk" clone-depth="1" />
+
+	<!-- X01BD stuff -->
 	<project path="device/asus/X01BD" name="android_device_asus_X01BD" remote="rsuntk-asus-sdm660" revision="lineage-24.0" />
-	<project path="device/asus/X01BD-common" name="android_device_asus_X01BD-common" remote="rsuntk-asus-priv" revision="lineage-24.0" />
-	<project path="kernel/asus/X01BD" name="android_kernel_asus_X01BD-4.19" remote="rsuntk" clone-depth="1" />
-	<project path="vendor/asus" name="proprietary_vendor_asus" remote="rsuntk-asus-priv" revision="lineage-24.0"/>
-	
+	<project path="vendor/asus/X01BD" name="proprietary_vendor_asus_X01BD" remote="rsuntk-asus-sdm660" revision="lineage-24.0"/>
+
+	<!-- X00TD stuff -->
+	<project path="device/asus/X00TD" name="android_device_asus_X00TD" remote="rsuntk-asus-sdm660" revision="lineage-24.0" />
+	<project path="vendor/asus/X00TD" name="proprietary_vendor_asus_X00TD" remote="rsuntk-asus-sdm660" revision="lineage-24.0"/>
+
 	<!-- Signing -->
 	<project path="vendor/rsuntk-priv/keys" name="signing_priv" remote="rsuntk-priv" />
 

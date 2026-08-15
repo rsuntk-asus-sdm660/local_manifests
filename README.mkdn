@@ -7,7 +7,7 @@ git clone https://github.com/rsuntk-asus-sdm660/local_manifests.git -b lineage-2
 
 2. Sync
 ```sh
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 ```
 
 ## Credits
