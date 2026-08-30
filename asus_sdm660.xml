@@ -19,18 +19,22 @@
 	<!-- Public Remote -->
 	<remote name="rsuntk-asus-sdm660" fetch="https://github.com/rsuntk-asus-sdm660" revision="master" clone-depth="1" />
 	<remote name="rsuntk" fetch="https://github.com/rsuntk" revision="master" clone-depth="1" />
+	<remote name="LOS-git" fetch="https://github.com/LineageOS" revision="lineage-24.0" clone-depth="1" />
 
 	<!-- Private Remote -->
 	<remote name="rsuntk-asus-priv" fetch="ssh://git@github.com/rsuntk-asus-sdm660" revision="master" clone-depth="1" />
-	<remote name="rsuntk-priv" fetch="ssh://git@github.com/rsuntk" revision="master" clone-depth="1" />
 
 	<!-- Removal -->
 	<remove-project path="hardware/qcom-caf/sdm660/audio" />
 	<remove-project path="hardware/qcom-caf/sdm660/display" />
+	<remove-project path="device/qcom/sepolicy-legacy-um" />
 
 	<!-- QCOM Hal -->
 	<project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom_audio" remote="rsuntk-asus-sdm660" />
 	<project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" remote="rsuntk-asus-sdm660" />
+
+	<!-- QCOM Sepolicy -->
+	<project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="LOS-git" />
 
 	<!-- Dolby Atmos -->
 	<project path="hardware/asus/dolby" name="android_hardware_dolby" remote="rsuntk-asus-sdm660" />
@@ -47,8 +51,5 @@
 	<!-- X00TD stuff -->
 	<project path="device/asus/X00TD" name="android_device_asus_X00TD" remote="rsuntk-asus-sdm660" revision="lineage-24.0" />
 	<project path="vendor/asus/X00TD" name="proprietary_vendor_asus_X00TD" remote="rsuntk-asus-sdm660" revision="lineage-24.0"/>
-
-	<!-- Signing -->
-	<project path="vendor/rsuntk-priv/keys" name="signing_priv" remote="rsuntk-priv" />
 
 </manifest>
