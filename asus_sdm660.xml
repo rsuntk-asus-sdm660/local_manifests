@@ -21,9 +21,6 @@
 	<remote name="rsuntk" fetch="https://github.com/rsuntk" revision="master" clone-depth="1" />
 	<remote name="LOS-git" fetch="https://github.com/LineageOS" revision="lineage-24.0-legacy-um" clone-depth="1" />
 
-	<!-- Private Remote -->
-	<remote name="rsuntk-asus-priv" fetch="ssh://git@github.com/rsuntk-asus-sdm660" revision="master" clone-depth="1" />
-
 	<!-- Removal -->
 	<remove-project path="hardware/qcom-caf/sdm660/audio" />
 	<remove-project path="hardware/qcom-caf/sdm660/display" />
@@ -40,7 +37,7 @@
 	<project path="hardware/asus/dolby" name="android_hardware_dolby" remote="rsuntk-asus-sdm660" />
 
 	<!-- Common stuff -->
-	<project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" remote="rsuntk-asus-priv" revision="lineage-24.0" />
+	<project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" remote="rsuntk-asus-sm660" revision="lineage-24.0" />
 	<project path="vendor/asus/sdm660-common" name="proprietary_vendor_asus_sdm660-common" remote="rsuntk-asus-sdm660" revision="lineage-24.0" />
 	<project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660-4.19" remote="rsuntk" clone-depth="1" />
 
